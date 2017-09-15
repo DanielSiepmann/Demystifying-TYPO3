@@ -24,4 +24,6 @@ custom code.
    FluidStyledContentRendering
    PluginRendering
    ExecutingPhp
-   AddingCustomCObjects
+
+.. todo:: Add section about adding custom TypoScript Content Objects (cObjects)
+.. todo:: Add section about adding custom tt_content content elements.

@@ -31,8 +31,6 @@ is a yellow error message:
 
     Figure 1-2: The default result for undefined content element definitions.
 
-.. todo:: Document section "Adding custom content element"
-
 .. _contentRendering_customRecordRendering:
 
 Custom record rendering

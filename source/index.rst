@@ -36,3 +36,4 @@ Sections
    :includehidden:
 
    TypoScript/index
+   CMS/index
