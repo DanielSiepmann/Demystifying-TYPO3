@@ -30,3 +30,34 @@ is a yellow error message:
     :align: center
 
     Figure 1-2: The default result for undefined content element definitions.
+
+.. todo:: Document section "Adding custom content element"
+
+.. _contentRendering_customRecordRendering:
+
+Custom record rendering
+-----------------------
+
+As :ref:`tsref:cobj-content` can be configured with different database tables, it's possible to use
+it to render custom record types. E.g. it's possible to render ``fe_users`` with the following
+TypoScript:
+
+.. literalinclude:: /Code/TypoScript/CustomRecordRendering.typoscript
+   :language: typoscript
+   :linenos:
+   :lines: -4
+
+We assume *fluid_styled_content* is included, otherwise ``lib.contentElement`` is undefined.
+
+Assuming we link to a page where we want to show a single user, e.g. a profile, we can add a
+parameter with his uid. We then can render the profile using this additional TypoScript:
+
+.. literalinclude:: /Code/TypoScript/CustomRecordRendering.typoscript
+   :language: typoscript
+   :linenos:
+   :lines: 6-
+
+The example assumes we detail page is shown on page ``53`` and our users are saved on page ``140``.
+
+This way we will not need any plugin with controller and actions. We have a very small TypoScript
+setup which is pure configuration, and define rendering inside of Fluid.

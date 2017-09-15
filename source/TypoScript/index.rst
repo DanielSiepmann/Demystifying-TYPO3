@@ -24,3 +24,4 @@ custom code.
    FluidStyledContentRendering
    PluginRendering
    ExecutingPhp
+   AddingCustomCObjects

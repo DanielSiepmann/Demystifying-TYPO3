@@ -10,11 +10,22 @@ Afterwards you should know how and why something works and how you can extend pa
 For best experience, follow the numbered order as each section might expect knowledge from sections
 before.
 
+The goal
+--------
+
+The goal is to describe how specific parts are working, and what you can do with the understanding.
+
 Current state
 -------------
 
 This project is currently in early alpha. Parts are added time by time. Please provide feedback at
 the project home: https://github.com/DanielSiepmann/Demystifying-TYPO3
+
+Please provide feedback which topics need to be covered, which parts are to short or long. I'll try
+to continually improve this document.
+
+Once this project useful for a wide audience and I know where it fits, I'll migrate it to
+docs.typo3.org.
 
 Sections
 --------

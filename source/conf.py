@@ -97,7 +97,9 @@ extensions.append("guzzle_sphinx_theme")
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'google_analytics_account': 'UA-9837518-4',
+}
 
 # html_sidebars = {
 #    '**': [ ],

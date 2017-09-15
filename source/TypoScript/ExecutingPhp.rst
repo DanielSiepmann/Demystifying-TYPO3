@@ -1,3 +1,4 @@
+.. _highlight: typoscript
 .. _executingPhp:
 
 Executing PHP
@@ -33,3 +34,19 @@ As :ref:`tsref:stdwrap` provides :ref:`tsref:stdwrap-preuserfunc` and
 processing, or result after processing with custom PHP.
 
 This way you get fine grained control to manipulate everything in TypoScript via PHP.
+
+.. _executingPhp_executingCustomPhp:
+
+Executing custom PHP
+--------------------
+
+We now can include custom PHP, without any further knowledge about TYPO3 APIs within TypoScript::
+
+    page {
+        20 = USER
+        20 {
+            userFunc = Codappix\Example\Userfunction->stuff
+        }
+    }
+
+The php part is documented at :ref:`TypoScript Reference <tsref:cobj-user-examples>`.

@@ -1,0 +1,29 @@
+fe_users = < lib.contentElement
+fe_users {
+    templateName = FrontendUser
+}
+
+lib.fe_user = CONTENT
+lib.fe_user {
+    if.isTrue.data = GP:user
+
+    table = fe_users
+    select {
+        uidInList {
+            data = GP:user
+            intval = 1
+        }
+
+        pidInList = 140
+    }
+}
+
+[page|uid = 53]
+    page {
+        10 {
+            variables {
+                mainContent < lib.fe_user
+            }
+        }
+    }
+[GLOBAL]
