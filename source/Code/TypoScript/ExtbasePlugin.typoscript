@@ -1,0 +1,8 @@
+tt_content.list.20 {
+    searchcore_core {
+        extensionName = SearchCore
+        pluginName = search
+        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+        vendorName = Codappix
+    }
+}
