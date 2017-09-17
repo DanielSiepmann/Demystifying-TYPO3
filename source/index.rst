@@ -37,3 +37,5 @@ Sections
 
    TypoScript/index
    CMS/index
+   Logging/index
+
