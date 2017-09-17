@@ -15,3 +15,14 @@ manually will log all entries colored.
 
 This way we do not need any knowledge about the OS, unix or windows, but only about TYPO3 to
 configure where to log our information.
+
+Here is an example configuration:
+
+.. code-block:: php
+   :linenos:
+
+   $GLOBALS['TYPO3_CONF_VARS']['LOG']['Vendor']['ExtName']['Command']['writerConfiguration'] = [
+       \TYPO3\CMS\Core\Log\LogLevel::INFO => [
+           \Codappix\CdxCore\Log\Writer\AnsiConsole::class => [],
+       ],
+   ];
